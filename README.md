@@ -68,3 +68,22 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+
+##   Here is the overview of how the code works:
+
+ The code imports necessary dependencies, including React, useState for managing state, axios for making HTTP requests, and components from the 'recharts' and 'file-saver' packages.
+
+## The component initializes two state variables: data and chartData. data will store the top 20 most frequent words and their frequencies, while chartData will hold the data needed to render the bar chart.
+
+The fetchData function is an asynchronous function triggered when the submit button is clicked. It makes an HTTP GET request to the specified API URL, retrieves the response data, and performs word frequency analysis on it. The frequency analysis involves splitting the text into words, counting the occurrence of each word, and sorting the results to obtain the top 20 most frequent words. The data and chartData states are then updated accordingly.
+
+The handleExport function is called when the export button is clicked. It converts the data array into a CSV string format, creates a Blob from it, and saves it as a CSV file using the saveAs function.
+
+The component's return statement defines the JSX elements to be rendered. It includes an h1 heading, a submit button that triggers the fetchData function, a bar chart component from 'recharts' that is conditionally rendered if chartData exists, and an export button that is conditionally rendered if the data array has a length greater than 0.
+
+I have also used some of the css to style our page
+
+ ## In summary, this component fetches data, performs word frequency analysis, and visualizes the results in a bar chart. It also allows exporting the word frequency data as a CSV file.
