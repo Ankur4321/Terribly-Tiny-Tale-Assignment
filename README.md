@@ -71,6 +71,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 
 
+Here is the hosted link of my app:
+https://flourishing-frangollo-dac048.netlify.app
 
 ##   Here is the overview of how the code works:
 
